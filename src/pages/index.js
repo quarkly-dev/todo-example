@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Section } from "@quarkly/components";
+import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -16,7 +16,13 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section inner-max-width="640px" background="--color-lightD1" padding="96px 0 96px 0" min-height="100vh">
-			<Components.AppTodo />
+			<Components.AppTodo>
+				<Override slot="appHeader">
+					<Override slot="text">
+						React TODO List
+					</Override>
+				</Override>
+			</Components.AppTodo>
 		</Section>
 		<Link
 			font={"--capture"}
