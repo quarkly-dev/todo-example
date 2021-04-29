@@ -80,22 +80,22 @@ const overrides = {
 const AppTodo = props => {
 	/// DATA
 	const [data, setData] = useState([{
-		label: "Going to learn React",
+		label: "Catch up with Alex",
 		important: true,
 		like: false,
 		id: "1"
 	}, {
-		label: "Fix a BBug",
+		label: "Make new icon",
 		important: false,
 		like: false,
 		id: "2"
 	}, {
-		label: "I need a break",
+		label: "Lanch with Andrew",
 		important: true,
 		like: false,
 		id: "3"
 	}, {
-		label: "New task",
+		label: "Team meeting",
 		important: false,
 		like: true,
 		id: "4"

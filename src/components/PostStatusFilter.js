@@ -8,7 +8,8 @@ const overrides = {
 		"props": {
 			"children": "Button",
 			"border-radius": "24px",
-			"padding": "8px 18px 8px 18px"
+			"padding": "8px 18px 8px 18px",
+			"margin-left": "12px"
 		}
 	}
 };
