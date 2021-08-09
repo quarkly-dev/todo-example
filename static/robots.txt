@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://todo-example-quarkly.netlify.app/sitemap-index.xml
